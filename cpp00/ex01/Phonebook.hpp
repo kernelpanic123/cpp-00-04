@@ -18,6 +18,7 @@ public:
 	~Phonebook(void);
 
 	void add(void);
+	void search(void);
 };
 
 #endif

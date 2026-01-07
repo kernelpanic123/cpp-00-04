@@ -1,5 +1,14 @@
 #include "Contact.hpp"
 
+Contact::Contact(void)
+{
+
+}
+Contact::~Contact(void)
+{
+	
+}
+
 void Contact::set_first_name(std::string tmp)
 {
 	first_name = tmp;
