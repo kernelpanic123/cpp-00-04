@@ -23,7 +23,7 @@ int main(void)
 		if (input == "ADD")
 			repertory.add();
 			
-		else if (input == "s")
+		else if (input == "SEARCH")
 			repertory.search();
 		else if (input == "EXIT")
 			break;
