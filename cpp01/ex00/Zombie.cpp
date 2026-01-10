@@ -4,23 +4,24 @@ Zombie::Zombie(void)
 {
 
 }
+Zombie::Zombie(std::string name)
+{
+	std::cout << name << " zombie from heap created" << std::endl;
+	_name = name;
+}
 Zombie::~Zombie(void)
 {
-	std::cout << this->_name << " dead" << std::endl;
+	std::cout << _name << " dead" << std::endl;
 }
-void Zombie::set_name(std::string tmp)
+void Zombie::set_name(std::string name)
 {
-	this->_name = tmp;
+	_name = name;
 }
-std::string Zombie::get_name(void)
+std::string  Zombie::get_name(void)
 {
-	return this->_name;
+	return _name;
 }
-
 void Zombie::announce(void)
 {
-	std::string input = "Francis";
-	set_name(input);
-	std::cout << get_name() << ": BraiiiiiiinnnzzzZ..." << std::endl;
-
+	std::cout << _name << ": BraiiiiiiinnnzzzZ..." << std::endl;
 }

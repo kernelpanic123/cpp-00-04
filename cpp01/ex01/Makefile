@@ -1,6 +1,6 @@
-NAME = ZOMBIE
+NAME = MOAR_BRAINZ
 
-SRC = Zombie.cpp main.cpp newZombie.cpp randomChump.cpp
+SRC = main.cpp Zombie.cpp zombieHorde.cpp
 
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 
@@ -22,4 +22,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re 
+.PHONY: all clean fclean re

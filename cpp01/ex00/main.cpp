@@ -2,9 +2,9 @@
 
 int main(void)
 {
-	Zombie rotten;
-
-	rotten.announce();
-
-
+	Zombie* heapzombie = newZombie("Marco");
+	heapzombie->announce();
+	delete heapzombie; //destructeur appele
+	randomChump("Patrick");
+	//destructeur automatiquement appele
 }
