@@ -1,8 +1,8 @@
-NAME = sed
+NAME = harl
 
-SRC = main.cpp
+SRC = Harl.cpp main.cpp
 
-CFLAGS =  -std=c++98
+CFLAGS = -Wall -Wextra -Werror -std=c++98
 
 OBJ = $(SRC:.cpp=.o)
 
@@ -18,7 +18,7 @@ clean:
 	rm -f *.o
 
 fclean: clean
-	rm -f $(NAME) *.replace
+	rm -f $(NAME)
 
 re: fclean all
 

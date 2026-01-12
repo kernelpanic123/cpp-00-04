@@ -1,6 +1,6 @@
-NAME = ref
+NAME = violence
 
-SRC = main.cpp
+SRC = main.cpp HumanA.cpp Weapon.cpp HumanB.cpp
 
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 
