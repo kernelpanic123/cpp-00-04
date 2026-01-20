@@ -35,7 +35,6 @@ Fixed::~Fixed()
 }
 int Fixed::getRawBits(void) const
 {
-	std::cout << "getRawBits member function called" << std::endl;
 	return (_fixed_point_nbr);
 }
 
@@ -51,4 +50,10 @@ int Fixed::toInt(void) const
 float Fixed::toFloat(void) const
 {
 	return (float)_fixed_point_nbr / (float)(1 << _fraction);
+}
+
+std::ostream &operator << (std::ostream &out, const Fixed &c)
+{
+	out << c.toFloat();
+	return out;
 }
