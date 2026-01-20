@@ -1,6 +1,6 @@
-NAME = 
+NAME = real_fixed
 
-SRC = 
+SRC = main.cpp Fixed.cpp
 
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 
