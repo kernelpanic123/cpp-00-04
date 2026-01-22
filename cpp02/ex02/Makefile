@@ -1,6 +1,6 @@
 NAME = real_fixed
 
-SRC = main.cpp Fixed.cpp comp.cpp arithmetic.cpp
+SRC = main.cpp Fixed.cpp comp.cpp arithmetic.cpp increment.cpp
 
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 

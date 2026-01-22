@@ -24,14 +24,27 @@ class Fixed
 		int toInt( void ) const;
 		float toFloat( void ) const;
 
-		bool operator== (Fixed &other) const;
-		bool operator!= (Fixed &other) const;
-		bool operator> (Fixed &other) const;
-		bool operator< (Fixed &other) const;
-		bool operator>= (Fixed &other) const;
-		bool operator<= (Fixed &other) const;
+		bool operator== (const Fixed &other) const;
+		bool operator!= (const Fixed &other) const;
+		bool operator> (const Fixed &other) const;
+		bool operator< (const Fixed &other) const;
+		bool operator>= (const Fixed &other) const;
+		bool operator<= (const Fixed &other) const;
 
-		Fixed operator + (Fixed &other);
+		Fixed operator + (const Fixed &other) const;
+		Fixed operator - (const Fixed &other) const;
+		Fixed operator * (const Fixed &other) const;
+		Fixed operator / (const Fixed &other) const;
+
+		Fixed & operator ++ (void);
+		Fixed operator ++(int);
+		Fixed & operator -- (void);
+		Fixed operator --(int);
+
+		static Fixed &min(Fixed &x, Fixed &y);
+		static Fixed &max(Fixed &x, Fixed &y);
+		static const Fixed &min(const Fixed &x, const Fixed &y);
+		static const Fixed &max(const Fixed &x, const Fixed &y);
 
 
 };

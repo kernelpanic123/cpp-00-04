@@ -2,9 +2,8 @@
 
 int main( void )
 {
-	Fixed a(7);
-	Fixed b(3);
-	a + b;
+	Fixed a(10);
+	Fixed b(0);
 
 	// if (a == b)
 	// 	std::cout << "BINGOOOO" << std::endl;
@@ -22,8 +21,6 @@ int main( void )
 
 	// if (a <= b)
 	// 	std::cout << "6 BINGOOO" << std::endl;
-
-	std::cout << a + b << std::endl;
 
 
 	//Fixed const b( Fixed( 5.05f ) * Fixed( 2 ) );
