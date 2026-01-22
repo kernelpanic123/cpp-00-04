@@ -7,12 +7,12 @@ Fixed::Fixed() : _fixed_point_nbr(0)
 
 Fixed::Fixed(const int value)
 {
-	std::cout << "Int constructor called" << std::endl;
+	//std::cout << "Int constructor called" << std::endl;
 	_fixed_point_nbr = value << _fraction;
 }
 Fixed::Fixed(const float value)
 {
-	std::cout << "Float constructor called" << std::endl;
+	//std::cout << "Float constructor called" << std::endl;
 	_fixed_point_nbr = roundf(value * (1 << _fraction)); //1 << _fraction = 256
 }
 
@@ -23,7 +23,7 @@ Fixed::Fixed(Fixed const &src)
 }
 Fixed& Fixed::operator=( const Fixed &src)
 {
-	std::cout << "Copy assignment operator called" << std::endl;
+	//std::cout << "Copy assignment operator called" << std::endl;
 	if (this != &src) 
 		_fixed_point_nbr = src.getRawBits();
 	return *this;
@@ -31,7 +31,7 @@ Fixed& Fixed::operator=( const Fixed &src)
 
 Fixed::~Fixed()
 {
-	std::cout << "Destructor called" << std::endl;
+	//std::cout << "Destructor called" << std::endl;
 }
 int Fixed::getRawBits(void) const
 {

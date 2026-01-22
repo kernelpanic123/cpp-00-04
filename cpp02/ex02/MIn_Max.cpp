@@ -14,13 +14,13 @@ const Fixed &Fixed::min(const Fixed &x, const Fixed &y)
 }
 Fixed &Fixed::max(Fixed &x, Fixed &y)
 {
-	if (x <= y)
+	if (x >= y)
 		return x;
 	return y;
 }
 const Fixed &Fixed::max(const Fixed &x, const Fixed &y)
 {
-	if (x <= y)
+	if (x >= y)
 		return x;
 	return y;
 }
