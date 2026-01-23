@@ -18,7 +18,7 @@ Fixed::Fixed(const float value)
 
 Fixed::Fixed(Fixed const &src)
 {
-	std::cout << "Copy constructor called" << std::endl;
+	//std::cout << "Copy constructor called" << std::endl;
 	*this = src;
 }
 Fixed& Fixed::operator=( const Fixed &src)
