@@ -1,12 +1,14 @@
 #include "ClapTrap.hpp"
+#include "ScavTrap.hpp"
 
 int main (void)
 {
-	ClapTrap clanker_1 = ClapTrap("robot");
-	ClapTrap clanker_2 = ClapTrap("waloud");
+	ScavTrap clanker_1 = ScavTrap("wall-e");
+	ScavTrap clanker_2 = ScavTrap("EvE");
+	ScavTrap clanker_3 = clanker_1;
 
-	clanker_1.attack("Walid");
-	clanker_2.takeDamage(20);
-	clanker_1.beRepaired(10);
+	clanker_1.guardGate();
+	clanker_2.beRepaired(5);
+	clanker_1.attack("robocop");
 
 }
