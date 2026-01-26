@@ -8,7 +8,7 @@ class ScavTrap : public ClapTrap
 
 	private:
 
-
+		
 
 	public:
 

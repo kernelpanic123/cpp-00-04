@@ -8,14 +8,17 @@ class Animal
 {
 	protected :
 
-		std::string type;
+		std::string _type;
 
 	public:
 
 		Animal();
+		Animal(std::string name);
 		Animal(const Animal &other);
 		Animal &operator =(const Animal &other);
-		~Animal();
+		virtual void makeSound(void) const;
+		virtual ~Animal();
+
 };
 
 #endif
