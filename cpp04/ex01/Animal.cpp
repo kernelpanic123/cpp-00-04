@@ -2,7 +2,7 @@
 
 Animal::Animal()
 {
-
+	std::cout << "default constructor animal called" << std::endl;
 }
 Animal::Animal(std::string name) : _type(name)
 {
@@ -34,5 +34,5 @@ void Animal::makeSound(void) const
 
 Animal::~Animal()
 {
-
+	std::cout << "default destructor animal called" << std::endl;
 }

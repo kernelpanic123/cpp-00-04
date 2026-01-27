@@ -2,6 +2,7 @@
 
 Dog::Dog() : Animal()
 {
+	std::cout << "default constructor dog called" << std::endl;
 	this->_type = "Dog";
 }
 
@@ -31,5 +32,5 @@ void Dog::makeSound(void) const
 
 Dog::~Dog()
 {
-
+	std::cout << "default destructor dog called" << std::endl;
 }
