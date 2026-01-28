@@ -15,7 +15,7 @@ Cat::Cat(std::string name) : Animal(name)
 Cat::Cat(const Cat &other) : Animal(other)
 {
 	this->small_brain = new Brain;
-	this->small_brain = other.small_brain;
+	*this->small_brain = *other.small_brain;
 }
 
 Cat &Cat::operator=(const Cat &other)
