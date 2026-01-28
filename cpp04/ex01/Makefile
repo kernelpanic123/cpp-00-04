@@ -1,6 +1,6 @@
-NAME = polymorphism
+NAME = deep_copy
 
-SRC = main.cpp Animal.cpp Dog.cpp Cat.cpp
+SRC = main.cpp Animal.cpp Dog.cpp Cat.cpp Brain.cpp
 
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 
