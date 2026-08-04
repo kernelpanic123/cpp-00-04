@@ -2,7 +2,8 @@
 
 Brain::Brain()
 {
-
+	for (int i = 0; i < 100; i++)
+		this->ideas[i] = "braindead";
 }
 
 Brain &Brain::operator=(const Brain &other)
