@@ -5,7 +5,7 @@ Form::Form() : _name("BIGBOSS"), _signed(false), _gradesign(1), _gradeexec(1)
 {
 
 }
-Form::Form(const std::string &name, int gradesign, int gradeexec) : _name(name), _gradesign(gradesign), _gradeexec(gradeexec) _signed(false)
+Form::Form(const std::string &name, int gradesign, int gradeexec) : _name(name), _gradesign(gradesign), _gradeexec(gradeexec) ,_signed(false)
 {
 	if (gradesign < 1 || gradeexec < 1)
 		throw Form::GradeTooHighException();
@@ -65,4 +65,20 @@ int Form::get_gradeexec(void)
 int Form::get_gradesign(void)
 {
 	return _gradesign;
+}
+std::ostream &operator<<(std::ostream &os, Form &obj)
+{
+	os << obj.get_name() << ", require sign grade: " << obj.get_gradesign();
+	os << ", require execute grade: " << obj.get_gradeexec();
+	os << ", sign status: ";
+	
+	if (obj.get_signed() == true)
+	{
+		os << "yes";
+	}
+	else
+	{
+		os << "no";
+	}
+	return os;
 }
